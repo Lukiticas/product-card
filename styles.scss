@@ -93,7 +93,7 @@ main {
       color: var(--darkgrayishblue);
     }
 
-    & h1 {
+    & h2 {
       font-family: "Fraunces", serif;
       font-size: 2.89em;
       line-height: 1;
@@ -113,7 +113,7 @@ main {
       align-items: center;
       gap: 2em;
 
-      & > h1 {
+      & > h3 {
         color: var(--darkcyan);
 
         &::before {
@@ -136,7 +136,7 @@ main {
       border: none;
       background-color: var(--darkcyan);
 
-      & p {
+      & span {
         font-size: 18px;
         font-weight: 700;
         color: var(--white);

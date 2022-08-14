@@ -97,7 +97,7 @@ main {
   letter-spacing: 1ch;
   color: var(--darkgrayishblue);
 }
-.card__description h1 {
+.card__description h2 {
   font-family: "Fraunces", serif;
   font-size: 2.89em;
   line-height: 1;
@@ -115,10 +115,10 @@ main {
   align-items: center;
   gap: 2em;
 }
-.card__description .description__price > h1 {
+.card__description .description__price > h3 {
   color: var(--darkcyan);
 }
-.card__description .description__price > h1::before {
+.card__description .description__price > h3::before {
   content: "$";
 }
 .card__description .description__price span {
@@ -134,7 +134,7 @@ main {
   border: none;
   background-color: var(--darkcyan);
 }
-.card__description button p {
+.card__description button span {
   font-size: 18px;
   font-weight: 700;
   color: var(--white);
