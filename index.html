@@ -22,7 +22,13 @@
     <main>
       <article class="card">
         <div class="card__img">
-          <img src="./images/image-product-desktop.jpg" alt="product img" />
+          <picture>
+            <source srcset="./images/image-product-mobile.jpg" media="(max-width: 800px)">
+            <img
+            src="./images/image-product-desktop.jpg"
+            alt="product img"
+          />
+          </picture>
         </div>
         <section class="card__description">
           <small>PERFUME</small>
@@ -39,16 +45,18 @@
         </section>
       </article>
     </main>
-
-    <div class="attribution">
-      Challenge by
-      <a
-        rel="noopener"
-        href="https://www.frontendmentor.io?ref=challenge"
-        target="_blank"
-        >Frontend Mentor</a
-      >. Coded with ❤️ by
-      <a href="https://github.com/Lukiticas" rel="noopener">Lucas Matheus</a>.
-    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a
+          rel="noopener"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded with <3 by
+        <a rel="noopener" href="https://github.com/Lukiticas" target="_blank"
+          >Lucas Matheus</a
+        >.
+    </footer>
   </body>
 </html>

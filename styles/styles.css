@@ -15,8 +15,154 @@
 }
 
 body {
-  font-family: "Fraunces", serif;
   font-family: "Montserrat", sans-serif;
+  background-color: var(--cream);
+}
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+main {
+  width: 100%;
+  min-height: calc(100vh - 30px);
+  display: grid;
+  place-items: center;
+  padding: 1.3em;
+}
+
+.card {
+  width: 680px;
+  height: 600px;
+  display: flex;
+  background-color: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media screen and (max-width: 800px) {
+  .card {
+    flex-direction: column;
+    width: 320px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 280px) {
+  .card {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+  .card {
+    max-height: 80%;
+  }
+}
+.card__img {
+  width: 50%;
+}
+@media screen and (max-width: 800px) {
+  .card__img {
+    width: 100%;
+  }
+}
+.card__img img {
+  width: 100%;
+  height: 100%;
+}
+.card__description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 1.5em;
+  gap: 2em;
+}
+@media screen and (max-width: 800px) {
+  .card__description {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
+.card__description small {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1ch;
+  color: var(--darkgrayishblue);
+}
+.card__description h1 {
+  font-family: "Fraunces", serif;
+  font-size: 2.89em;
+  line-height: 1;
+}
+.card__description > p {
+  line-height: 1.5rem;
+  font-size: 16px;
+  color: var(--darkgrayishblue);
+  font-weight: 500;
+  width: 100%;
+}
+.card__description .description__price {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 2em;
+}
+.card__description .description__price > h1 {
+  color: var(--darkcyan);
+}
+.card__description .description__price > h1::before {
+  content: "$";
+}
+.card__description .description__price span {
+  color: var(--darkgrayishblue);
+  font-weight: 500;
+  text-decoration: line-through;
+}
+.card__description button {
+  width: 100%;
+  border-radius: 10px;
+  padding: 18px;
+  outline: none;
+  border: none;
+  background-color: var(--darkcyan);
+}
+.card__description button p {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+}
+.card__description button:hover {
+  cursor: pointer;
+  background-color: var(--verydarkblue);
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  display: grid;
+  place-items: center;
+}
+footer .attribution {
+  text-align: center;
+  gap: 1ch;
+  color: var(--darkblue);
+}
+footer .attribution a {
+  color: var(--verydarkblue);
+  text-decoration: none;
+  font-style: none;
+  font-weight: 700;
+}
+footer .attribution a:hover {
+  color: var(--darkcyan);
 }
 
 /*# sourceMappingURL=styles.css.map */
