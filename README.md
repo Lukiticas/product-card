@@ -2,6 +2,8 @@
 
 My version of frontend's card component challenge!! Hope you like!
 
+This was especially interesting for me, because i was able to use SCSS and it's best qualitys in a functional way. It was super cool to search and learn how to make images responsive through picture and source HTML tags!
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -24,7 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![mobile version!](./design/screenshot-mobile.jpeg)
+![desktop version!](./design/screenshot-desktop.jpeg)
 
 ### Links
 
@@ -36,12 +39,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- As few HTML5 possible
+- SCSS
+- SCSS nesting and media querys
+- Reponsive images

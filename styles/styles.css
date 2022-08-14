@@ -143,6 +143,12 @@ main {
   cursor: pointer;
   background-color: var(--verydarkblue);
 }
+.card__description button:active {
+  background-color: var(--cream);
+}
+.card__description button:active p {
+  color: var(--verydarkblue);
+}
 
 footer {
   width: 100%;
